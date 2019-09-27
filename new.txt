@@ -1,0 +1,39 @@
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+//update query
+
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+
+//between query
+
+SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;
+
+//aliases
+
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+
+//group by
+
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+//min
+
+
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+//order by

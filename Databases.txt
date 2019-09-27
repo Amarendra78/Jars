@@ -1,0 +1,72 @@
+table1 Emp
+
+
+Create table Emp(Empno Number(4) Not Null,Ename Varchar2(10),job Varchar2(9),mgr Number(4),Hiredate Date,Sal Number(7,2),Comm Number(7,2)Deptno Number(2));
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+table2 DesignationMaster
+
+
+create table DesignationMaster(Design_code Number(3) Not Null,Design_name Varchar2(50));
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+table3 DepartmentMaster
+
+create table DepartmentMaster(Dept_Code Number(2) Not Null,Dept_name Varchar2(50));
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+table4 StudentMaster
+
+create table StudentMaster(Student_Code Number(6) Not Null,Student_name Varchar2(50) Not Null,Dept_Code Number(2),Student_dob Date,Student_Address Varchar2(240));
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+table5 StudentMarks
+
+create table StudentMarks(Student_Code Number(6),Student_Year  Number Not Null,Subject1 Number(3),Subject2 Number(3),Subject3 Number(3));
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+table6 StaffMaster
+
+create table StaffMaster(Staff_code Number(8) Not Null,Staff_Name Varchar2(50) Not Null,Design_code Number,Dept_code Number,HireDate Date,Staff_dob Date,Staff_address Varchar2(240),Mgr_code Number(8),Staff_sal Number (10,2)); 
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+table7 BookMaster
+
+create table BookMaster(Book_Code Number(10) Not Null,Book_Name Varchar2(50) Not Null,Book_pub_year Number,Book_pub_author Varchar2(50) Not Null);
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+table8 BookTransactions
+
+create table BookTransactions(Book_Code Number,Student_code Number,Staff_code Number,Book_Issue_date Date Not Null,Book_expected_return_date Date Not Null,Book_actual_return_date Date);
+
+
+
